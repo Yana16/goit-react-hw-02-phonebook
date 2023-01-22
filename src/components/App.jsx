@@ -71,7 +71,7 @@ render() {
   return (
 
     <div>
-      <h1>Phonebook</h1>
+      <h1 className="h1">Phonebook</h1>
 
       <ContactForm onAddContact={this.addContact}/>
 
