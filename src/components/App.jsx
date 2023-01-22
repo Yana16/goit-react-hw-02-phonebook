@@ -2,7 +2,6 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
-import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from "uuid";
 
 
