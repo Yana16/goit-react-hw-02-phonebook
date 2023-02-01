@@ -8,7 +8,7 @@ const ContactList =({contacts, onRemoveContact}) => (
 <ul className={styles.TaskList}>
   {contacts.map((contact) => (
     <li className = {styles.TaskList_item} key={contact.id}>
-        {contact.name + ":" + contact.number}
+        {contact.name + ":"+ contact.number}
           
           {
             <button className={styles.TaskList_button} type="button" name="delete" onClick={() => onRemoveContact(contact.id)}>
