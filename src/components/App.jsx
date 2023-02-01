@@ -16,13 +16,11 @@ export default class App extends React.Component {
   };
 
   addContact = task => {
-    const searchSameName = this.state.contacts;
-    const found = searchSameName.find(task => task.name);
+    const searchSameName = this.state.contacts.find(
+      contact => contact.name === task.name
+    );
 
-    // .map(cont => cont.name)
-    // .includes(task.name);
-
-    if (found) {
+    if (searchSameName) {
       alert(`${task.name} is already in contacts`);
     } else if (task.name.length === 0) {
       alert('Fields must be filled!');
